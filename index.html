@@ -24,7 +24,6 @@
         table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; }
         img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; }
         a { color: #313131; text-decoration: none; }
-
         .editorial-copy {
             font-family: 'adobe-caslon-pro', 'EB Garamond', Georgia, 'Times New Roman', serif;
             font-size: 18px;
@@ -61,7 +60,6 @@
             display: inline-block;
             text-decoration: none;
         }
-
         @media only screen and (max-width: 600px) {
             .container { width: 100% !important; max-width: 100% !important; }
             .col-stack { display: block !important; width: 100% !important; max-width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; }
@@ -69,7 +67,8 @@
             .mobile-pad { padding-left: 20px !important; padding-right: 20px !important; }
             .editorial-copy { font-size: 17px !important; line-height: 1.55 !important; }
             .hero-title { font-size: 32px !important; }
-            .prod-card-img { width: 220px !important; max-width: 100% !important; margin: 0 auto !important; }
+            .prod-card-box { height: auto !important; padding: 20px !important; }
+            .prod-card-img { width: 100% !important; max-width: 220px !important; height: auto !important; margin: 0 auto !important; }
         }
     </style>
 </head>
@@ -204,7 +203,7 @@
                         </td>
                     </tr>
 
-                    <!-- 6. GOOP 2-COLUMN PRODUCT GRID -->
+                    <!-- 6. GOOP 2-COLUMN PRODUCT GRID (BALANCED 1:1 SQUARE CARDS) -->
                     <tr>
                         <td align="center" valign="top" style="padding: 55px 20px 25px 20px;">
                             <h2 style="font-family: 'adobe-caslon-pro', 'EB Garamond', Georgia, serif; font-size: 28px; font-weight: 400; color: #313131; margin: 0; text-align: center;">
@@ -212,8 +211,7 @@
                             </h2>
                         </td>
                     </tr>
-
-                    <!-- Product Grid: Purifier + Replacement Filter Pack (White Purifier) -->
+                    <!-- Product Grid: Purifier + Replacement Filter Pack (Both Exactly Same Size & Height) -->
                     <tr>
                         <td align="center" valign="top" style="padding: 10px 20px 45px 20px;">
                             <!--[if (gte mso 9)|(IE)]>
@@ -224,9 +222,9 @@
                             <!-- Product 1: White Purifier -->
                             <table border="0" cellpadding="0" cellspacing="0" align="left" width="48%" class="col-stack col-space" style="width: 48%; max-width: 265px;">
                                 <tr>
-                                    <td align="center" bgcolor="#F9F8F6" style="background-color: #F9F8F6; padding: 22px;">
-                                        <a href="https://hugoairpurifier.com/" target="_blank">
-                                            <img alt="Hugo 3-in-1 Air Purifier White" class="prod-card-img" src="https://hugoairpurifier.com/cdn/shop/products/6.white_1000X1000.jpg?v=1634072760" width="210" style="width: 100%; max-width: 210px; display: block;" />
+                                    <td align="center" valign="middle" bgcolor="#F9F8F6" class="prod-card-box" style="background-color: #F9F8F6; padding: 20px; height: 225px; box-sizing: border-box;">
+                                        <a href="https://hugoairpurifier.com/" target="_blank" style="display: block;">
+                                            <img alt="Hugo 3-in-1 Air Purifier White" class="prod-card-img" src="https://hugoairpurifier.com/cdn/shop/products/6.white_1000X1000.jpg?v=1634072760" width="210" height="210" style="width: 100%; max-width: 210px; height: 210px; object-fit: cover; display: block; margin: 0 auto; border: 0;" />
                                         </a>
                                     </td>
                                 </tr>
@@ -246,12 +244,12 @@
                             <td width="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
                             <td align="center" valign="top" width="265">
                             <![endif]-->
-                            <!-- Product 2: Activated Carbon Filter Pack -->
+                            <!-- Product 2: Activated Carbon Filter Pack (Same Proportional Box & Height) -->
                             <table border="0" cellpadding="0" cellspacing="0" align="right" width="48%" class="col-stack" style="width: 48%; max-width: 265px;">
                                 <tr>
-                                    <td align="center" bgcolor="#F9F8F6" style="background-color: #F9F8F6; padding: 22px;">
-                                        <a href="https://hugoairpurifier.com/products/hugo-activated-carbon-filter-packs" target="_blank">
-                                            <img alt="Hugo Activated Carbon Filter Packs" class="prod-card-img" src="https://cdn.klaviyomail.com/company/Yv9P6y/images/9082bb20-253e-4da1-945e-6f377e274c70.jpeg" width="210" style="width: 100%; max-width: 210px; display: block;" />
+                                    <td align="center" valign="middle" bgcolor="#F9F8F6" class="prod-card-box" style="background-color: #F9F8F6; padding: 20px; height: 225px; box-sizing: border-box;">
+                                        <a href="https://hugoairpurifier.com/products/hugo-activated-carbon-filter-packs" target="_blank" style="display: block;">
+                                            <img alt="Hugo Activated Carbon Filter Packs" class="prod-card-img" src="https://cdn.klaviyomail.com/company/Yv9P6y/images/9082bb20-253e-4da1-945e-6f377e274c70.jpeg" width="210" height="210" style="width: 100%; max-width: 210px; height: 210px; object-fit: cover; display: block; margin: 0 auto; border: 0;" />
                                         </a>
                                     </td>
                                 </tr>
@@ -353,7 +351,6 @@
                             </table>
                         </td>
                     </tr>
-
                 </table>
                 <!--[if (gte mso 9)|(IE)]>
                 </td>
